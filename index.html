@@ -21,22 +21,7 @@
         },
         false
       );
-      artyom.addCommands([
-        {
-          indexes: ["Hello"],
-          action: i => {
-            artyom.say("Hello! What can i do for you master");
-          }
-        },
-        {
-          indexes: ["Shutdown"],
-          action: (i, wildcard) => {
-            artyom.fatality().then(() => {
-              console.log("Artyom successfully stopped");
-            });
-          }
-        }
-      ]);
+   
 
       artyom
         .initialize({
@@ -49,7 +34,7 @@
         })
         .then(() => {
           console.log("Artyom has been successfully initialized");
-          $("#console").append("Please speak to execute command");
+          $("#console").append("This Button Will Speak");
         })
         .catch(err => {
           console.log("Artyom couldn't be initizlied", err);
