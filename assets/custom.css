@@ -10,6 +10,10 @@
   border-radius: 90px;
 }
 
+body {
+  background-color: pink;
+}
+
 #portfolio-page img:hover {
   transform: scale(1.2);
 }
@@ -19,7 +23,7 @@
 }
 
 #name {
-  width: 300px;
+  width: 800px;
 }
 
 #name:hover {
@@ -27,7 +31,7 @@
 }
 
 #email {
-  width: 300px;
+  width: 800px;
 }
 
 #email:hover {
@@ -35,7 +39,7 @@
 }
 
 #sent-message {
-  width: 300px;
+  width: 800px;
 }
 
 .btn {
@@ -79,7 +83,6 @@ body {
 #menu {
   background-color: rgb(26, 26, 163);
   opacity: 0.9;
-  width: 100%;
 }
 
 #menu li {
@@ -132,12 +135,4 @@ body {
   color: white;
   font-size: 1rem;
   filter: brightness(1000%);
-}
-
-@media only screen and (max-width: 768px) {
-  /* Adjust Portfolio Container for mobile phones: */
-  #portfolio-page .container {
-    min-height: 160vh;
-    overflow: auto;
-  }
 }
